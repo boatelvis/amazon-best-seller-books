@@ -47,3 +47,8 @@ body {
   font-size: 0.75rem;
   margin-top: 0.5rem;
 }
+
+.book button {
+  padding: 0.3rem;
+  margin-top: 0.5rem;
+}

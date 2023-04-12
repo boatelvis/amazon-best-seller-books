@@ -12,10 +12,16 @@ const books = [
   },
 
   {
-    title: 'Lessons in chemistry:',
+    title: 'Lessons in chemistry',
     author: 'Bonnie Garmus',
     img: 'https://images-na.ssl-images-amazon.com/images/I/71yNgTMEcpL._AC_UL600_SR600,400_.jpg',
     id: 2,
+  },
+  {
+    title: 'It Starts with Us',
+    author: 'Colleen Hoover',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/71PNGYHykrL._AC_UL600_SR600,400_.jpg',
+    id: 3,
   },
 ]
 
@@ -31,7 +37,7 @@ const BookList = () => {
 
 const Book = ({ img, title, author }) => {
   const displayTitle = () => {
-    console.log(title)
+    alert(title)
   }
 
   return (
@@ -39,7 +45,7 @@ const Book = ({ img, title, author }) => {
       <img src={img} alt={title} />
       <h2>{title}</h2>
       <h4>{author}</h4>
-      <button onClick={displayTitle}>Display title</button>
+      <button onClick={displayTitle}>Display Title</button>
     </article>
   )
 }
